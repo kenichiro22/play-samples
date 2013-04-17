@@ -1,0 +1,11 @@
+@(users: List[User])
+
+@main("Welcome to Play 2.1") {
+    Users:
+
+    <ul>
+        @for(user <- users){
+            <li>@user.name (@user.email)</li>
+        }
+    </ul>
+}
