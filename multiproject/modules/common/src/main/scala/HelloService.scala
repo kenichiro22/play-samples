@@ -1,7 +1,7 @@
 package service
 
 object HelloService {
-  def hello = {
-    "Hello"
+  def hello(msg: String) = {
+    s"Hello, ${msg}"
   }
 }
