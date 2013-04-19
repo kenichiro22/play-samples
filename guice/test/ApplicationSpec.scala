@@ -33,7 +33,7 @@ class ApplicationSpec extends Specification with Mockito{
       }
     }
 
-    "render the index page with mock" in {
+    "render the index page with mockito" in {
       // SetUp
       val service = mock[UserService]
       val controller = new controllers.Application(service)
