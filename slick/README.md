@@ -10,14 +10,15 @@ Sample application with Sclik
 playは2.1.1を使う
 
 1. project/Build.scala のappDependencies に play-slick プラグインを追加します。
-
+```scala
     val appDependencies = Seq(
       jdbc,
       "com.typesafe.play" %% "play-slick" % "0.3.2"
     )
+```
 
 2. モデルクラスを定義します（importに注意）。
-
+```scala
     package models
 
     import play.api.db.slick.Config.driver.simple._
@@ -31,9 +32,10 @@ playは2.1.1を使う
       def email = column[String]("email", O.NotNull)
       def * = id ~ name ~ email <> (User.apply _, User.unapply _)
     }
+```
 
 3.  Usersを使用して検索を行います（importに注意）。
-
+```scala
     package controllers
 
     import models._
@@ -52,3 +54,4 @@ playは2.1.1を使う
         }
       }
     }
+```
