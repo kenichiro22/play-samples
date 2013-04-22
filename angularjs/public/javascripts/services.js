@@ -4,7 +4,7 @@
 
 angular.module('phonecatServices', ['ngResource']).
     factory('Phone', function($resource){
-  return $resource('assets/phones/:phoneId.json', {}, {
+  return $resource('phones/:phoneId', {}, {
     query: {method:'GET', params:{phoneId:'phones'}, isArray:true}
   });
 });
