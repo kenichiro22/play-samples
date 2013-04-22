@@ -1,7 +1,20 @@
-@(message: String)
+<!doctype html>
+<html lang="en" ng-app="phonecat">
+<head>
+<meta charset="utf-8">
+<title> Google Phone Gallery </title>
+<link rel="stylesheet" href="@routes.Assets.at("stylesheets/app.css")">
+<link rel="stylesheet" href="@routes.Assets.at("stylesheets/bootstrap.css")">
+<script src="@routes.Assets.at("javascripts/angular/angular.js")" type="text/javascript"></script>
+<script src="@routes.Assets.at("javascripts/app.js")" type="text/javascript"></script>
+<script src="@routes.Assets.at("javascripts/controllers.js")" type="text/javascript"></script>
+<script src="@routes.Assets.at("javascripts/filters.js")" type="text/javascript"></script>
+<script src="@routes.Assets.at("javascripts/services.js")" type="text/javascript"></script>
+<script src="@routes.Assets.at("javascripts/angular/angular-resource.js")" type="text/javascript"></script>
+</head>
+<body>
 
-@main("Welcome to Play 2.1") {
-    
-    @play20.welcome(message)
-    
-}
+<div ng-view></div>
+
+</body>
+</html>
