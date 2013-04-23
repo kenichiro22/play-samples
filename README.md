@@ -7,3 +7,4 @@ Play framework samples
 * slick : DB access with Slick sample
 * multiproject : sub module sample
 * guice : DI with Guice sample
+* eb: Elastic Beanstalk sample
