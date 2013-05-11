@@ -1,4 +1,9 @@
-This is your new Play 2.1 application
+Playframework & AngularJS Sample
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+## ユニットテスト
+
+1. nodeとkarmaをインストールします。
+2. scripts/test.sh (Windowsではtest.bat) を実行します。
+
+## end-to-endテスト
