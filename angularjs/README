@@ -4,6 +4,10 @@ Playframework & AngularJS Sample
 ## ユニットテスト
 
 1. nodeとkarmaをインストールします。
-2. scripts/test.sh (Windowsではtest.bat) を実行します。
+2. scripts/test.sh を実行します。
 
 ## end-to-endテスト
+
+1. play run でアプリケーションを起動します。
+2. node scripts/web-server.js でWebサーバーを起動します。
+3. scritps/e2e-test.sh を実行します。
