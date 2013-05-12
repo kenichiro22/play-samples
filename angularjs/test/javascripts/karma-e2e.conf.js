@@ -6,11 +6,11 @@ files = [
   'e2e/**/*.js'
 ];
 
-autoWatch = false;
+autoWatch = true;
 
 browsers = ['Chrome'];
 
-singleRun = true;
+singleRun = false;
 
 urlRoot = '/__karma/';
 
@@ -18,8 +18,9 @@ proxies = {
   '/': 'http://localhost:9000/'
 };
 
-junitReporter = {
-  outputFile: 'test_out/e2e.xml',
-  suite: 'e2e'
-};
 
+reporters = ['progress', 'junit'];
+junitReporter = {
+    outputFile: '../../target/e2e-test-results.xml',
+    suite: 'e2e'
+};

@@ -11,3 +11,5 @@ Playframework & AngularJS Sample
 1. play run でアプリケーションを起動します。
 2. node scripts/web-server.js でWebサーバーを起動します。
 3. scritps/e2e-test.sh を実行します。
+
+JUnit形式のXMLレポートはtargetに作成されます。
