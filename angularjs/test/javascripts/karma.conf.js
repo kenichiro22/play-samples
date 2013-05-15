@@ -10,8 +10,8 @@ basePath = '../../';
 files = [
   JASMINE,
   JASMINE_ADAPTER,
-  'public/javascripts/angular/angular.js',
-  'public/javascripts/angular/angular-*.js',
+  'public/components/angular/angular.js',
+  'public/components/angular-*/angular-*.js',
   'test/javascripts/lib/angular/angular-mocks.js',
   'public/javascripts/*.js',
   'test/javascripts/unit/*.js'

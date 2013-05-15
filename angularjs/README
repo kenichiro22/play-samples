@@ -13,3 +13,22 @@ Playframework & AngularJS Sample
 3. scritps/e2e-test.sh を実行します。
 
 JUnit形式のXMLレポートはtargetに作成されます。
+
+## Bowerを使う
+1. bowerをインストールします
+> npm install -g bower
+2. プロジェクトのルートに.bowerrcを作成します。
+> {
+>     "directory": "public/components"
+> }
+3. プロジェクトのルートでbower initを実行します。b
+
+## AngularJS を使う
+1. bowerでangularをインストールします
+> bower install angular --save
+> bower install angular-cookies --save
+> bower install angular-loader -- save
+> bower install angular-resource --save
+> bower install angular-sanitize --save
+2. public/components にインストールされるファイルをテンプレートで読み込みます
+
