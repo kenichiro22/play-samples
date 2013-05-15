@@ -19,6 +19,7 @@ object Application extends Controller {
 
   def messages = Action {
     implicit request =>
+      // TODO: use lang in request
       Ok(Json.toJson(Messages.messages.get("default"))).as(JAVASCRIPT)
   }
 }
