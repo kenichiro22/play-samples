@@ -2,9 +2,11 @@
 
 /* Controllers */
 
-function PhoneListCtrl($scope, Phone) {
+function PhoneListCtrl($scope, $translate ,Phone) {
   $scope.phones = Phone.query();
   $scope.orderProp = 'age';
+
+  $translate('search');
 }
 
 //PhoneListCtrl.$inject = ['$scope', 'Phone'];
