@@ -1,0 +1,18 @@
+{
+  "name": "angular-translate",
+  "version": "0.8.0",
+  "main": "./angular-translate.js",
+  "dependencies": {
+    "angular": "1.0.6",
+    "angular-cookies": "1.0.6"
+  },
+  "gitHead": "5736637eaf671fb1f7668dbac2514376f2632be3",
+  "readme": "# bower-angular-translate\r\n\r\nangular-translate bower package\r\n\r\n### Installation\r\n\r\n````\r\n$ bower install PascalPrecht/bower-angular-translate\r\n````\r\n",
+  "readmeFilename": "README.md",
+  "_id": "angular-translate@0.8.0",
+  "description": "angular-translate bower package",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PascalPrecht/bower-angular-translate.git"
+  }
+}

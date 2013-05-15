@@ -32,3 +32,7 @@ JUnit形式のXMLレポートはtargetに作成されます。
 > bower install angular-sanitize --save
 2. public/components にインストールされるファイルをテンプレートで読み込みます
 
+### angular-translateを使用する
+1. angular-translateをインストールします
+> bower install PascalPrecht/bower-angular-translate --save
+2. public/components にインストールされるファイルをテンプレートで読み込みます
