@@ -3,6 +3,7 @@ play-samples
 
 Play framework samples
 
+* angularjs : Angularjs phonecat sample
 * bootstrap-less : twitter bootstrap with less compile
 * coverage : code coverag sample ([scct](http://mtkopone.github.io/scct/))
 * eb: Elastic Beanstalk sample
