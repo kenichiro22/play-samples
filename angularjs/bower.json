@@ -1,0 +1,18 @@
+{
+  "name": "angularjs",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "angular": "~1.0.6",
+    "angular-cookies": "~1.0.6",
+    "angular-loader": "~1.0.6",
+    "angular-resource": "~1.0.6",
+    "angular-sanitize": "~1.0.6",
+    "jquery": "1.9.1",
+    "angular-translate": "PascalPrecht/bower-angular-translate#~0.8.0"
+  }
+}

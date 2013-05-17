@@ -13,3 +13,52 @@ Playframework & AngularJS Sample
 3. scritps/e2e-test.sh を実行します。
 
 JUnit形式のXMLレポートはtargetに作成されます。
+
+## Bowerを使う
+1. bowerをインストールします
+> npm install -g bower
+2. プロジェクトのルートに.bowerrcを作成します。ライブラリをインストールするディレクトリを指定しています。
+> {
+>     "directory": "public/components"
+> }
+3. プロジェクトのルートでbower initを実行します。
+
+## AngularJS を使う
+1. bowerでangularをインストールします
+> bower install angular --save
+> bower install angular-cookies --save
+> bower install angular-loader -- save
+> bower install angular-resource --save
+> bower install angular-sanitize --save
+2. public/components にインストールされるファイルをテンプレートで読み込みます
+
+### angular-translateを使用する
+1. angular-translateをインストールします
+> bower install PascalPrecht/bower-angular-translate --save
+2. public/components にインストールされるファイルをテンプレートで読み込みます
+3. messageをJsonで書き出します（controllers.Application#messages）
+```scala
+  def messages = Action {
+    implicit request =>
+      // TODO: use lang in request
+      Ok(Json.toJson(Messages.messages.get("default"))).as(JAVASCRIPT)
+  }
+```
+4. angular-translateの設定を行います。
+```javascript
+    /* App Module */
+    angular.module('phonecat', ['phonecatFilters', 'phonecatServices', 'pascalprecht.translate']).
+        config(['$routeProvider', '$translateProvider', function ($routeProvider, $translateProvider) {
+            $routeProvider.
+                when('/phones', {templateUrl: 'assets/partials/phone-list.html', controller: PhoneListCtrl}).
+                when('/phones/:phoneId', {templateUrl: 'assets/partials/phone-detail.html', controller: PhoneDetailCtrl}).
+                otherwise({redirectTo: '/phones'});
+
+            $translateProvider.registerLoader(jsRoutes.controllers.Application.messages().url);
+            $translateProvider.preferredLanguage('en_US');
+        }]);
+```
+5. translate filterを使用します。
+```javascript
+{{'search' | translate}}
+```
